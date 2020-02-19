@@ -1,12 +1,11 @@
-# vue2x-demo-pc
+# vue2x-demo-m
 
 **提示：此为通用2xdemo，请勿在此修改提交，需要的脚手架的或者部分内容的，拷贝走**
 
 # vue-pc
 
-> A Vue.js project  Vue栈pc端demo
+> A Vue.js project  Vue栈m端demo
 >
-> 大佬们别急，马上我们就跟新到 cli3x 只是当前还是要跟整体项目架构规划，维持统一、稳定性
 
 ## Build Setup
 
@@ -76,6 +75,8 @@ package.json  // 配置文件
 >
 > 修改router为history方式懒加载（router）
 >
+> 添加px2rem (postcss-pxtorem)
+>
 > 添加vuex 模块化分装(main.js)
 >
 > ​	1、moudles 区分业务模块，进行state mutations actions 处理
@@ -134,7 +135,7 @@ package.json  // 配置文件
 >
 > vue全家桶（vue+vue-router+vuex）
 >
-> iView（非大型项目建议按需加载,历史原因使用iView,建议换element ui）
+> [mint-ui](https://github.com/ElemeFE/mint-ui) 推荐使用
 >
 > axios
 >
@@ -155,4 +156,5 @@ package.json  // 配置文件
 - sourceTree 图形化界面管理（推荐）
 
 根据自己喜好选择
+
 

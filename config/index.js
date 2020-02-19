@@ -4,8 +4,6 @@
 
 const path = require('path')
 const url = 'http://10.144.128.55:80' // demo环境
-const sysUrl = 'http://sod-3001sysmgtserver.sod-dev1.prd.sod' // 权限测试服务
-const epdUrl = 'http://sod-1001springgateway.sod-dev1.prd.sod' // edp测试服务
 module.exports = {
   dev: {
     // Paths
@@ -17,16 +15,6 @@ module.exports = {
         target: url, // 接口域名
         changeOrigin: true, // 是否跨域
         pathRewrite: { '^/mockapi': '' }
-      },
-      '/sysApi3001': {
-        target: sysUrl,
-        changeOrigin: true,
-        pathRewrite: {'^/sysApi3001': ''}
-      },
-      '/epdApi1001': {
-        target: epdUrl,
-        changeOrigin: true,
-        pathRewrite: {'^/epdApi1001': ''}
       }
     },
 
